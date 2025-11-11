@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box" id="login-box">
+            <h2>Login to Quiz App</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="username">Name</label>
+                    <input type="text" id="username" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                </div>
+                <button type="submit" id="login-btn">Login</button>
+                <p class="error-message" id="error-message"></p>
+            </form>
+        </div>
+
+        <div class="quiz-box" id="quiz-box">
+            <div class="quiz-header">
+                <div class="user-info">
+                    <span class="welcome-text" id="welcome-text"></span>
+                    <button class="logout-btn" id="logout-btn">Logout</button>
+                </div>
+                <h2 id="question">Question Text</h2>
+                <div class="quiz-info">
+                    <span class="question-number" id="question-number">1 of 50</span>
+                    <span class="score" id="score">Score: 0</span>
+                </div>
+            </div>
+            <ul class="options" id="options">
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Option A</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">Option B</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">Option C</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d_text">Option D</label>
+                </li>
+            </ul>
+            <button id="submit">Submit</button>
+        </div>
+
+        <div class="result-box" id="result-box">
+            <h2>Quiz Completed!</h2>
+            <p class="user-name" id="result-user-name"></p>
+            <p class="final-score" id="final-score">Your Score: 0/50</p>
+            <p class="result-message" id="result-message"></p>
+            <button id="restart">Restart Quiz</button>
+            <button id="logout-result">Logout</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
