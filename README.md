@@ -53,4 +53,4 @@ Add timer and leaderboard features.
 👨‍💻 Author
 
 Dhruv Parsana
-
+B-Tech Computer Engineering | PDEU
